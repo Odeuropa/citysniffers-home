@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// Update the sans-serif font family
+$family-sans-serif: "Poppins", "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+$primary: #735dae;
+$primary-invert: #fff;
+$green: #b9d59b;
+
+@import "../node_modules/bulma/bulma";
+
+.hero-body {
+  background: $primary url('../img/violet_pattern.png') 0 0 / 300px 300px;
+}
+
+.hero.is-primary {
+  .subtitle {
+    strong {
+      color: $green;
+    }
+  }
+}
+
+.title {
+  img {
+    width: 10em;
+    max-width: 80vw;
+  }
+}
+
+.phone {
+  border: 1vw solid #000;
+  border-radius: 1.3vw;
+  margin-bottom: -5em;
+
+  max-width: 20vw;
+  box-shadow: #333 5px 5px 10px -5px;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 468px) {
+    max-width: 60vw;
+  }
+}
+
+.store-links {
+  a {
+    max-width: 10em;
+    height: 61px;
+    display: inline-block;
+    vertical-align: top;
+    &.apple {
+      padding: 10px 0;
+    }
+
+  }
+}
+
+
+.logo {
+  max-height: 3em;
+}
+
+.eu-flag {
+  margin: auto;
+  display: block;
+  height: 5em;
+  margin-top: 0.5em;
+}
+
+.footer {
+  a {
+    cursor: pointer;
+    padding: 0.5em;
+    img {
+      cursor: pointer;
+    }
+  }
+  a:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+}
+
+p {
+  max-width: 600px
+}

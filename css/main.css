@@ -10349,3 +10349,29 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 p {
   max-width: 600px;
 }
+
+.store-btn {
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  height: 40px !important;
+  min-width: 8em;
+  margin: 10px;
+  padding: 10px 7px;
+  font-weight: bold;
+}
+.store-btn i {
+  float: left;
+  margin-right: 10px;
+  margin-top: -4px;
+  font-style: normal;
+  font-size: 1.2em;
+}
+.store-btn small {
+  font-size: 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  line-height: 0.4em;
+}
